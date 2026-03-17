@@ -1,0 +1,53 @@
+
+      <!DOCTYPE html>
+      <html lang='ar' dir='rtl'>
+         <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>الفوال</title>
+            <link href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css' rel='stylesheet'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+            <link rel='preconnect' href='https://fonts.googleapis.com'>
+            <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+            <link href='https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap' rel='stylesheet'>
+         </head>
+         <body class='bg-slate-950 h-screen flex justify-center items-center'>
+            <div class='glassmorphisms bg-white/20 backdrop-blur-md rounded-3xl w-1/2 h-1/2 flex flex-col justify-center items-center shadow-lg hover:shadow-2xl transition duration-300 ease-in-out'>
+               <div class='logo mb-10'>
+                  <h1 class='text-5xl font-bold text-white'>الفوال</h1>
+               </div>
+               <div class='menu bg-white/10 backdrop-blur-md rounded-3xl p-10 w-4/5 h-4/5 overflow-y-scroll shadow-md hover:shadow-lg transition duration-300 ease-in-out'>
+                  <div class='menu-item mb-5'>
+                     <h2 class='text-2xl font-bold text-white'>طاعميه</h2>
+                     <p class='text-xl text-white'>5﷼</p>
+                  </div>
+                  <div class='menu-item mb-5'>
+                     <h2 class='text-2xl font-bold text-white'>فول</h2>
+                     <p class='text-xl text-white'>2﷼</p>
+                  </div>
+               </div>
+            </div>
+         </body>
+         <style>
+            .glassmorphisms {
+               background: linear-gradient(to bottom right, #fff, #fff);
+               box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+               backdrop-filter: blur(7.5px);
+               -webkit-backdrop-filter: blur(7.5px);
+               border-radius: 10px;
+               border: 1px solid rgba(255, 255, 255, 0.18);
+            }
+            .logo {
+               animation: logo 2s ease;
+            }
+            @keyframes logo {
+               0% {
+                  transform: scale(0);
+               }
+               100% {
+                  transform: scale(1);
+               }
+            }
+         </style>
+      </html>
+   
