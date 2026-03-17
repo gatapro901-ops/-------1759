@@ -1,0 +1,95 @@
+
+      /* Global Styles */
+      @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+      /* Tailwind Config */
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      /* Custom Styles */
+      :root {
+         --primary-color: #3498db;
+         --secondary-color: #f1c40f;
+         --dark-color: #2c3e50;
+         --light-color: #ecf0f1;
+      }
+
+      body {
+         font-family: 'Cairo', sans-serif;
+         background-color: #121212;
+         color: #fff;
+      }
+
+      /* Header Styles */
+      .header {
+         background: linear-gradient(to right, #2c3e50, #4ca1af);
+         padding: 20px;
+         text-align: center;
+         border-radius: 10px;
+         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .header .logo {
+         font-size: 36px;
+         font-weight: bold;
+         color: #fff;
+         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Menu Styles */
+      .menu {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 20px;
+      }
+
+      .menu .item {
+         background: linear-gradient(to right, #2c3e50, #4ca1af);
+         padding: 20px;
+         border-radius: 10px;
+         margin: 10px;
+         width: calc(33.33% - 20px);
+         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         transition: all 0.2s ease-in-out;
+      }
+
+      .menu .item:hover {
+         transform: scale(1.05);
+         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .menu .item .name {
+         font-size: 24px;
+         font-weight: bold;
+         color: #fff;
+      }
+
+      .menu .item .price {
+         font-size: 18px;
+         color: #fff;
+      }
+
+      /* Animation Styles */
+      .animate {
+         animation: fadeIn 2s;
+      }
+
+      @keyframes fadeIn {
+         from {
+            opacity: 0;
+         }
+         to {
+            opacity: 1;
+         }
+      }
+
+      /* Glassmorphism Styles */
+      .glass {
+         background: rgba(255, 255, 255, 0.1);
+         border-radius: 10px;
+         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         backdrop-filter: blur(10px);
+      }
+   
